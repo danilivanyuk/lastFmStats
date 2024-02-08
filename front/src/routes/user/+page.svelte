@@ -1,8 +1,8 @@
 <script lang='ts'>
     import { getContext } from "svelte";
-
-    const user = getContext('user');
-    console.log(user)
-
+    import { userNickname } from "../../store";
+    console.log($userNickname)
+    let nickname = $userNickname
+    console.log('skdfjlsdf', nickname)
 </script>
-<h1>Hello user</h1>
+<h1>Hello {nickname}</h1>
