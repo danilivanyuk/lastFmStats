@@ -1,8 +1,12 @@
 <script lang='ts'>
-    import { getContext } from "svelte";
     import { userNickname } from "../../store";
-    console.log($userNickname)
+    import { mockedData as data } from "../../../static/mockData"
     let nickname = $userNickname
-    console.log('skdfjlsdf', nickname)
+    // TODO: if there is no nickname return back to "/"
 </script>
-<h1>Hello {nickname}</h1>
+<div class="w-[80%] mx-auto">
+    <h1>Hello {nickname}</h1>
+
+    <p>Top track: {data.recenttracks.track}</p>
+
+</div>

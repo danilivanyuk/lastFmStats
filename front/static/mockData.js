@@ -1,4 +1,4 @@
-const mockedData = {
+export const mockedData = {
     "recenttracks": {
         "track": [
             {
