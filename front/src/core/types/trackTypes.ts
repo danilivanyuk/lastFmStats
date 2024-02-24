@@ -9,6 +9,10 @@ export interface TrackType {
 		nowplaying: string
 	}
 	url: string
+	date: {
+		uts: string,
+		"#text": string
+	}
 }
 
 export interface IRecentTracks {
